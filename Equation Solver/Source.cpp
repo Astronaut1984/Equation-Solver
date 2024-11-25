@@ -16,7 +16,7 @@ int main()
 	cout << "Real or Complex? (R/C): ";
 	cin >> t;
 	t = toupper(t);
-	
+
 	if (t == 'R')
 	{
 		Matrix<double, Dynamic, 1> solution = realHandler(n);
@@ -24,7 +24,7 @@ int main()
 		cout << "Solution: \n";
 		for (int i = 0; i < n; i++)
 		{
-			cout << "X[" << i + 1 << "] = " << solution[i]<<'\n';
+			cout << "X[" << i + 1 << "] = " << solution[i] << '\n';
 		}
 	}
 

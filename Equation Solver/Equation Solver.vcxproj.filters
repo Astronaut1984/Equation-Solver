@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Circuits Main Project\main.cpp">
+    <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Circuits Main Project\MatrixHandling.cpp">
+    <ClCompile Include="MatrixHandling.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Circuits Main Project\MatrixHandling.h">
+    <ClInclude Include="MatrixHandling.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>
