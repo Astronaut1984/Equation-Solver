@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Circuits Main Project", "Circuits Main Project\Circuits Main Project.vcxproj", "{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Equation Solver", "Equation Solver\Equation Solver.vcxproj", "{51224AA4-C00B-4922-9A0D-3A07A2E09600}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Debug|x64.ActiveCfg = Debug|x64
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Debug|x64.Build.0 = Debug|x64
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Debug|x86.ActiveCfg = Debug|Win32
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Debug|x86.Build.0 = Debug|Win32
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Release|x64.ActiveCfg = Release|x64
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Release|x64.Build.0 = Release|x64
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Release|x86.ActiveCfg = Release|Win32
-		{6DD49730-4A85-4D54-A46C-166CCFAF2ABC}.Release|x86.Build.0 = Release|Win32
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Debug|x64.ActiveCfg = Debug|x64
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Debug|x64.Build.0 = Debug|x64
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Debug|x86.ActiveCfg = Debug|Win32
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Debug|x86.Build.0 = Debug|Win32
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Release|x64.ActiveCfg = Release|x64
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Release|x64.Build.0 = Release|x64
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Release|x86.ActiveCfg = Release|Win32
+		{51224AA4-C00B-4922-9A0D-3A07A2E09600}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
