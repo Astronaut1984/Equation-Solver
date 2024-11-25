@@ -42,7 +42,7 @@ Matrix<complex<double>, Dynamic, 1> cmplxHandler(int n)
 		{
 			double real, imag;
 			cout << "Coefficient[" << i + 1 << "][" << j + 1 << "]= ";
-			cin >> real>> imag;
+			cin >> real >> imag;
 			complex<double> num(real, imag);
 			coff(i, j) = num;
 		}
@@ -74,7 +74,7 @@ string complexToStr(const std::complex<double>& z)
 	{
 		complexnum += (" + " + to_string(z.imag()) + "i");
 	}
-	else if(z.imag() < 0)
+	else if (z.imag() < 0)
 	{
 		complexnum += (" - " + to_string(-z.imag()) + "i");
 	}
@@ -83,7 +83,7 @@ string complexToStr(const std::complex<double>& z)
 
 void Help()
 {
-	cout<<separator<<"\t EQUATION SOLVER"<<separator
+	cout << separator << "\t EQUATION SOLVER" << separator
 		<< "Help: " << separator
 		<< "Input R/C when prompted (case insensitive).\n"
 		<< "You will be asked to input the coefficients (ie. Coefficient[1][2]), then Constants (ie. Constant[1])\n"
@@ -91,6 +91,6 @@ void Help()
 		<< "For Real: \n"
 		<< "\t Input ONLY ONE number whenever prompted\n"
 		<< "For Complex: \n"
-		<<"\t Input EXACTLY TWO numbers (a, b), they will be formatted as a + bi"
-		<<separator;
+		<< "\t Input EXACTLY TWO numbers (a, b), they will be formatted as a + bi"
+		<< separator;
 }
