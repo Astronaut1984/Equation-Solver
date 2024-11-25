@@ -9,7 +9,9 @@
 4. Enter the constants' matrix
 
 ##Example:
-`` ====================================
+```
+{
+====================================
 Enter the size of the matrix: 3
 Real or Complex? (R/C): r
 Enter Coefficients:
@@ -31,4 +33,6 @@ Constant[3] = 0
 Solution:
 X[1] = 1.95349
 X[2] = 15.3488
-X[3] = -10.0465 ``
+X[3] = -10.0465
+}
+```
