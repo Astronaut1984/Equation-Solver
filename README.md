@@ -1,14 +1,14 @@
-#Description:
--Simple Equation Solver of n equations with n variables.
--Works with real and complex numbers
--Simple and intuitive CLI
-#Usage:
+# Description:
+- Simple Equation Solver of n equations with n variables.
+- Works with real and complex numbers
+- Simple and intuitive CLI
+# Usage:
 1. Enter the size of the matrix.
 2. Enter whether the matrix is real or complex.
 3. Enter the coefficients matrix
 4. Enter the constants' matrix
 
-##Example:
+## Example:
 ```
 ====================================
 Enter the size of the matrix: 3
