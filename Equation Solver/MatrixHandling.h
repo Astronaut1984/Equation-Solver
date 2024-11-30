@@ -6,7 +6,9 @@ using namespace std;
 using namespace Eigen;
 
 
-Matrix<double, Dynamic, 1> realHandler(int n);
+int realHandler(int n, Matrix<double, Dynamic, 1>& Ans);
 string complexToStr(const std::complex<double>& z);
-Matrix<complex<double>, Dynamic, 1> cmplxHandler(int n);
+int cmplxHandler(int n, Matrix<complex<double>, Dynamic, 1>& Ans);
+template <typename Scalar> int analyzeSystem(const Matrix<Scalar, Dynamic, Dynamic>& A,
+    const Matrix<Scalar, Dynamic, 1>& b);
 void Help();
