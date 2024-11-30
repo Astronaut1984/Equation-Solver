@@ -106,7 +106,7 @@ void Help()
 		<< "Help: " << separator
 		<< "Input R/C when prompted (case insensitive).\n"
 		<< "You will be asked to input the coefficients (ie. Coefficient[1][2]), then Constants (ie. Constant[1])\n"
-		<< "The formatting will be as if you put the coefficients in a matrix\n"
+		<< "The formatting will be as if you put the coefficients and constants in a matrix\n"
 		<< "For Real: \n"
 		<< "\t Input ONLY ONE number whenever prompted\n"
 		<< "For Complex: \n"
