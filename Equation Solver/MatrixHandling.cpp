@@ -2,7 +2,7 @@
 
 string separator = "\n====================================\n";
 
-Matrix<double, Dynamic, 1> realHandler(int n)
+int realHandler(int n, Matrix<double, Dynamic, 1> &Ans)
 {
 	Matrix<double, Dynamic, Dynamic> coff(n, n);
 	cout << "Enter Coefficients: \n";
@@ -27,12 +27,21 @@ Matrix<double, Dynamic, 1> realHandler(int n)
 		constant(i) = num;
 	}
 
-	Matrix<double, Dynamic, 1> soln = coff.colPivHouseholderQr().solve(constant);
+	int systemType = analyzeSystem<double>(coff, constant);
 
-	return soln;
+	if (systemType == 1)
+	{
+		Ans = coff.colPivHouseholderQr().solve(constant);
+		return 1;
+	}
+
+	else
+	{
+		return systemType;
+	}
 }
 
-Matrix<complex<double>, Dynamic, 1> cmplxHandler(int n)
+int cmplxHandler(int n , Matrix<complex<double>, Dynamic, 1> & Ans)
 {
 	Matrix<complex<double>, Dynamic, Dynamic> coff(n, n);
 	cout << "Enter Coefficients (real, imaginary) separated with space: \n";
@@ -58,10 +67,20 @@ Matrix<complex<double>, Dynamic, 1> cmplxHandler(int n)
 		complex<double> num(real, imag);
 		constant(i) = num;
 	}
+	int systemType = analyzeSystem<complex<double>>(coff, constant);
 
-	Matrix<complex<double>, Dynamic, 1> soln = coff.colPivHouseholderQr().solve(constant);
+	if(systemType == 1)
+	{
+		Ans = coff.colPivHouseholderQr().solve(constant);
+		return 1;
+	}
 
-	return soln;
+	else
+	{
+		return systemType;
+	}
+
+	
 }
 
 string complexToStr(const std::complex<double>& z)
@@ -93,4 +112,35 @@ void Help()
 		<< "For Complex: \n"
 		<< "\t Input EXACTLY TWO numbers (a, b), they will be formatted as a + bi"
 		<< separator;
+}
+
+template <typename Scalar> int analyzeSystem(const Matrix<Scalar,Dynamic,Dynamic>& A,const Matrix<Scalar,Dynamic, 1>& b)
+{
+	// Solve the system using QR decomposition
+	ColPivHouseholderQR<Matrix<Scalar, Dynamic, Dynamic>> qr(A);
+
+	// Get the rank of A
+	int rank_A = qr.rank();
+
+	// Check the number of variables (columns in A)
+	int numVariables = A.cols();
+
+	// Check the rank condition
+	if (rank_A == numVariables) {
+		// Check if a solution exists
+		if ((A * qr.solve(b)).isApprox(b)) {
+			return 1;
+		}
+		else {
+			return -1;
+		}
+	}
+	else {
+		if ((A * qr.solve(b)).isApprox(b)) {
+			return 0;
+		}
+		else {
+			return -1;
+		}
+	}
 }
