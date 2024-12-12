@@ -35,4 +35,4 @@ X[2] = 15.3488
 X[3] = -10.0465
 ```
 # Credits: 
-George Bahij Soukariah (Astronaut1984)
+[ George Bahij Soukariah (Astronaut1984) ](https://github.com/Astronaut1984)
